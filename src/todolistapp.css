@@ -1,0 +1,85 @@
+.todo {
+    /* width: 80%;
+    min-width: 40px; */
+    width: max(400px, 80%);
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 오타 수정: .todo__from -> .todo__form */
+.todo__form {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.todo__input {
+    font-size: 1.2em;
+    padding: 1px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    flex: 1;
+}
+
+/* 공통 버튼 스타일 */
+.todo__button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo__button--add {
+    background-color: #4984e4;
+}
+
+.todo__item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee; 
+    gap: 10px;  
+}
+
+/* 오타 및 클래스명 통일: .todo__ckeck -> .todo__check */
+.todo__check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #999;
+}
+
+.todo__label {
+    flex: 1;
+}
+
+.todo__button--edit,
+.todo__button--delete {
+    font-size: 0.6rem;
+    padding: 4px;
+    /* 흰색 글씨(#fff)가 보이도록 임의로 배경색을 추가했습니다 */
+    background-color: #888; 
+}
+
+.todo__button--delete {
+    background-color: #e44949; /* 삭제 버튼은 빨간색으로 포인트 */
+}
+
+/* 오타 수정: complet -> complete */
+.todo__item--complete .todo__label {
+    color: #999;
+    text-decoration: line-through;
+}
+
+/* 추가 권장: 기본 ul 태그의 점(bullet)과 여백 제거 */
+.todo__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
